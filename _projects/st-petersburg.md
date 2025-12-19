@@ -2,7 +2,7 @@
 layout: project
 title: "Saint Petersburg AI Agent"
 description: "A tournament-winning AI agent for the board game Saint Petersburg using Monte-Carlo Tree Search and Machine Learning."
-image: "/assets/images/st-petersburg-game.jpg"
+image: "/assets/images/saint-petersburg-game.jpg"
 date: 2025-12-01
 ---
 

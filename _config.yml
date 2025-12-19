@@ -1,0 +1,14 @@
+# Site Settings
+title: Your Name
+description: "Personal Portfolio and Projects"
+url: "https://dannguyen111.github.io" 
+baseurl: ""
+
+# Build Settings
+markdown: kramdown
+
+# Collections Configuration
+collections:
+  projects:
+    output: true
+    permalink: /projects/:slug/

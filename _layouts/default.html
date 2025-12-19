@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="{{ '/' | relative_url }}">Dan Nguyen</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ '/#about' | relative_url }}">About</a></li>
+                <li><a href="{{ '/#skills' | relative_url }}">Skills</a></li>
+                <li><a href="{{ '/#experience' | relative_url }}">Experience</a></li>
+                <li><a href="{{ '/#extracurricular' | relative_url }}">Leadership</a></li>
+                <li><a href="{{ '/#projects' | relative_url }}">Projects</a></li>
+                <li><a href="{{ '/#honors' | relative_url }}">Honors</a></li>
+                <li><a href="{{ '/#contact' | relative_url }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dan Nguyen. Built with Jekyll & GitHub Pages.</p>
+    </footer>
+
+</body>
+
+</html>

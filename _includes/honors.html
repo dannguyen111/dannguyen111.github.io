@@ -1,0 +1,32 @@
+<div class="row justify-content-center">
+    <div class="col-lg-9">
+        <h2 class="text-center mb-5">Honors & Awards</h2>
+
+        <div class="list-group shadow-sm">
+
+            {% for award in site.data.honors %}
+            <div class="list-group-item p-4 border-0 border-bottom">
+                <div class="d-flex align-items-start">
+
+                    <div class="flex-shrink-0 text-warning mt-1">
+                        <span class="fs-2">{{ award.icon }}</span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-4">
+                        <div class="d-flex w-100 justify-content-between align-items-center flex-wrap">
+                            <h5 class="mb-1 fw-bold">{{ award.title }}</h5>
+                            <small class="text-muted text-nowrap">{{ award.date }}</small>
+                        </div>
+                        <div class="mb-2 text-primary small fw-bold">{{ award.organization }}</div>
+                        <p class="mb-0 text-secondary">
+                            {{ award.description }}
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>

@@ -2,7 +2,7 @@
 layout: project
 title: "Saint Petersburg AI Agent"
 description: "A tournament-winning AI agent for the board game Saint Petersburg using Monte-Carlo Tree Search and Machine Learning."
-image: "/assets/images/st-petersburg-game.webp"
+image: "/assets/images/st-petersburg-game.jpg"
 date: 2025-12-01
 ---
 
@@ -36,4 +36,5 @@ Beyond the agent, I ran thousands of Monte Carlo simulations to analyze the fair
 * **Concepts:** Game Theory, Reinforcement Learning, MCTS
 
 [View Code on GitHub](https://github.com/dannguyen111/saint-petersburg-AIDan-player.git){: .btn .btn-primary .mt-3}
+
 [Read the Balance Change Report (exported from OneNote)](/assets/pdfs/cs391-final-report.pdf){: .btn .btn-primary .mt-3}

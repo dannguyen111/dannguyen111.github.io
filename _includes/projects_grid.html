@@ -1,10 +1,19 @@
-<div class="container">
+<div class="container position-relative">
     <h2 class="text-center mb-4">My Projects</h2>
 
-    <div class="row">
-        {% for project in site.projects %}
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
+    {% if site.projects.size > 3 %}
+    <button class="btn btn-dark rounded-circle position-absolute start-0 top-50 translate-middle-y z-3 shadow"
+        onclick="scrollProjects(-1)" style="width: 45px; height: 45px; margin-left: -20px;">
+        ❮
+    </button>
+    {% endif %}
 
+    <div id="projects-scroller" class="row flex-nowrap overflow-auto pb-4"
+        style="scroll-behavior: smooth; scrollbar-width: none;">
+
+        {% for project in site.projects | sort: 'date' | reverse %}
+
+        <div class="col-12 col-md-6 col-lg-4" style="flex: 0 0 auto;">
             <div class="card h-100 shadow-sm">
 
                 {% if project.image %}
@@ -15,12 +24,36 @@
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">{{ project.title }}</h5>
                     <p class="card-text">{{ project.description }}</p>
-
                     <a href="{{ project.url | relative_url }}" class="btn btn-primary mt-auto">View Project</a>
                 </div>
 
             </div>
         </div>
         {% endfor %}
+
     </div>
+
+    {% if site.projects.size > 3 %}
+    <button class="btn btn-dark rounded-circle position-absolute end-0 top-50 translate-middle-y z-3 shadow"
+        onclick="scrollProjects(1)" style="width: 45px; height: 45px; margin-right: -20px;">
+        ❯
+    </button>
+    {% endif %}
+
 </div>
+
+<script>
+    function scrollProjects(direction) {
+        const container = document.getElementById('projects-scroller');
+        // Get the width of a single card to scroll exactly one 'slot'
+        const cardWidth = container.querySelector('.col-12').offsetWidth;
+        // Scroll left or right
+        container.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+    }
+</script>
+
+<style>
+    #projects-scroller::-webkit-scrollbar {
+        display: none;
+    }
+</style>

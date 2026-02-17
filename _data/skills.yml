@@ -4,8 +4,10 @@
   items:
     - Java
     - Python
+    - Django
     - JavaScript
     - HTML/CSS
+    - Bootstrap
     - PHP
     - LangChain
     - LangGraph
@@ -15,18 +17,22 @@
   icon: "📊"
   color: "success" # Bootstrap color class (green)
   items:
-    - Neo4j
-    - SQL
+    - PostgreSQL
     - MySQL
+    - SQL
+    - Neo4j
     - pandas
     - NumPy
     - Matplotlib
     - Microsoft Excel
 
-- category: "Developer Tools"
+- category: "Developer Tools & Cloud"
   icon: "🛠️"
   color: "secondary" # Bootstrap color class (gray)
   items:
     - Git
     - Azure DevOps
+    - AWS (S3)
+    - Stripe API
+    - Render
     - Jupyter Notebooks

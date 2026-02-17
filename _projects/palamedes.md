@@ -3,7 +3,7 @@ layout: project
 title: "Palamedes: Fraternity Management Platform"
 description: "A comprehensive web application built with Django to streamline chapter operations, point tracking, and financial dues for Greek life organizations."
 image: "/assets/images/palamedes-preview.png"
-date: 2026-02-17
+date: 2026-02-16
 ---
 
 ## Project Overview

@@ -7,7 +7,6 @@ tags: [AI/ML, RAG, Django, React, Python, pgvector, LLMs]
 date: 2026-05-06
 ---
 
-![APPC Archive Assistant Chat Interface](assets/images/appc-chatbot-preview.png)
 *A preview of the APPC Archive Assistant chat interface and citation system.*
 
 **[Try the Live Demo Here (Access to the chat is only available to Gettysburg College Faculty and Students)](http://commiteedoc.us.reclaim.cloud/chat)**

@@ -7,9 +7,6 @@ tags: [AI/ML, React, Django, Python, Groq API, LLMs, Docker]
 date: 2026-05-06
 ---
 
-![TwinMind Copilot Interface](assets/images/twinmind-preview.png)
-*A preview of the TwinMind Copilot live transcription and suggestion interface.*
-
 **[Try the Live Demo Here](https://twinmind-live-suggestions-xi.vercel.app/)**
 
 ### Project Overview

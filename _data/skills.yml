@@ -1,33 +1,23 @@
 - category: "Languages & Frameworks"
-  icon: "💻" 
-  color: "primary" 
+  icon: "💻" # You can use HTML entities or Emojis
+  color: "primary" # Bootstrap color class (blue)
   items:
     - Java
     - Python
     - Django
     - JavaScript
-    - React
     - HTML/CSS
     - Bootstrap
     - PHP
-
-- category: "AI & Machine Learning"
-  icon: "🤖"
-  color: "info" # Bootstrap color class (light blue)
-  items:
-    - Large Language Models (LLMs)
-    - Retrieval-Augmented Generation (RAG)
     - LangChain
     - LangGraph
     - scikit-learn
-    - Groq API
 
 - category: "Data Stack"
   icon: "📊"
-  color: "success" 
+  color: "success" # Bootstrap color class (green)
   items:
     - PostgreSQL
-    - pgvector
     - MySQL
     - SQL
     - Neo4j
@@ -38,15 +28,10 @@
 
 - category: "Developer Tools & Cloud"
   icon: "🛠️"
-  color: "secondary" 
+  color: "secondary" # Bootstrap color class (gray)
   items:
     - Git
-    - Docker
-    - Vercel
-    - Fly.io
-    - AWS (S3)
     - Azure DevOps
-    - Render
-    - Vite
-    - Stripe API
+    - AWS (S3)
     - Jupyter Notebooks
+    - Docker

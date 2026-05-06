@@ -10,7 +10,7 @@ date: 2026-05-06
 ![APPC Archive Assistant Chat Interface](assets/images/appc-chatbot-preview.png)
 *A preview of the APPC Archive Assistant chat interface and citation system.*
 
-**[Try the Live Demo Here](http://commiteedoc.us.reclaim.cloud/chat)**
+**[Try the Live Demo Here (Access to the chat is only available to Gettysburg College Faculty and Students)](http://commiteedoc.us.reclaim.cloud/chat)**
 
 ### Project Overview
 The APPC Archive Assistant is an AI-powered document management system designed to help university faculty seamlessly search and analyze decades of Academic Policy and Program Committee (APPC) minutes. It operates as a sophisticated Retrieval-Augmented Generation (RAG) pipeline that drastically reduces the administrative burden of researching historical academic policy.

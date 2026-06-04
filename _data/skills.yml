@@ -1,6 +1,5 @@
 - category: "Languages & Frameworks"
-  icon: "💻" # You can use HTML entities or Emojis
-  color: "primary" # Bootstrap color class (blue)
+  color: "primary"
   items:
     - Java
     - Python
@@ -14,8 +13,7 @@
     - scikit-learn
 
 - category: "Data Stack"
-  icon: "📊"
-  color: "success" # Bootstrap color class (green)
+  color: "success"
   items:
     - PostgreSQL
     - MySQL
@@ -27,8 +25,7 @@
     - Microsoft Excel
 
 - category: "Developer Tools & Cloud"
-  icon: "🛠️"
-  color: "secondary" # Bootstrap color class (gray)
+  color: "secondary"
   items:
     - Git
     - Azure DevOps

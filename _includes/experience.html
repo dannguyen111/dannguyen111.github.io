@@ -1,70 +1,43 @@
-<div class="row justify-content-center">
-    <div class="col-lg-10">
+<div id="experience" class="section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Experience</h2>
 
-        <h2 class="text-center mb-5">Experience</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
 
-        <div class="list-group shadow-sm mb-5">
-
-            <div class="list-group-item list-group-item-action flex-column align-items-start p-4">
-                <div class="d-flex w-100 justify-content-between">
-                    <h4 class="mb-1 fw-bold">AI Engineer Intern</h4>
-                    <small class="text-muted">June 2025 ~ Aug. 2025</small>
+            {% for item in site.data.experience %}
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h4 class="experience-title">{{ item.title }}</h4>
+                    <span class="experience-date">{{ item.period }}</span>
                 </div>
-                <div class="d-flex w-100 justify-content-between mb-3">
-                    <h5 class="mb-1 text-primary">KPMG</h5>
-                    <small class="text-muted">Berlin, DE</small>
-                </div>
-                <ul class="mb-1 text-secondary">
-                    <li>Pioneered a project to train a specialized LLM for Global Audit, building an ETL + GraphRAG
-                        pipeline with <strong>Python</strong> and <strong>Neo4j</strong> that improved QA processing
-                        efficiency by 30%.</li>
-                    <li>Engineered prompt-based LLM solutions using <strong>LangChain</strong> and <strong>Jupyter
-                            Notebooks</strong> for NLP tasks like markdown extraction, enhancing document parsing
-                        reliability by 30%.</li>
-                    <li>Developed QA dataset generators and an "LLM-as-a-judge" evaluation framework in
-                        <strong>Python</strong>, enabling scalable data augmentation and model validation.
-                    </li>
+                <div class="experience-company">{{ item.company }}</div>
+                {% if item.location %}<div style="color: var(--color-text-light); font-size: 0.9rem; margin-bottom: var(--spacing-sm);">{{ item.location }}</div>{% endif %}
+                <ul style="margin-left: var(--spacing-lg); margin-bottom: var(--spacing-md);">
+                    {% for point in item.highlights %}
+                    <li class="experience-description">{{ point }}</li>
+                    {% endfor %}
                 </ul>
             </div>
-
-            <div class="list-group-item list-group-item-action flex-column align-items-start p-4">
-                <div class="d-flex w-100 justify-content-between">
-                    <h4 class="mb-1 fw-bold">Data Scientist Intern</h4>
-                    <small class="text-muted">May 2024 ~ Aug. 2024</small>
-                </div>
-                <div class="d-flex w-100 justify-content-between mb-3">
-                    <h5 class="mb-1 text-primary">KPMG</h5>
-                    <small class="text-muted">Berlin, DE</small>
-                </div>
-                <ul class="mb-1 text-secondary">
-                    <li>Leveraged <strong>Python</strong>, <strong>Jupyter Notebooks</strong>, and <strong>MS
-                            Excel</strong> to conduct data analysis on public bank datasets, developing a deterministic
-                        rule-based baseline model for peer group clustering.</li>
-                    <li>Engineered a <strong>stochastic unsupervised algorithm</strong> for the <strong>Clara
-                            2.0</strong> AI (anomaly detection), achieving a 15% improvement in peer group
-                        cohesion.</li>
-                    <li>Designed and evaluated various peer group quality measures by comparing different methodologies
-                        to validate the most effective models for the risk assessment tool.</li>
-                </ul>
-            </div>
+            {% endfor %}
 
         </div>
 
-        <h3 class="mb-4">Education</h3>
-        <div class="card shadow-sm border-0">
+        <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Education</h3>
+        <div class="card" style="max-width: 900px; margin: 0 auto;">
             <div class="card-body p-4">
-                <div class="d-flex justify-content-between align-items-center">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                     <div>
                         <h4 class="card-title fw-bold mb-0">Gettysburg College</h4>
-                        <p class="text-muted mb-0">Bachelor of Science in Computer Science and Mathematics</p>
+                        <p style="color: var(--color-text-light); margin: 0; font-size: 0.95rem;">Bachelor of Science in Computer Science and Mathematics</p>
                     </div>
-                    <div class="text-end">
-                        <span class="badge bg-primary rounded-pill mb-1">GPA: 4.11</span>
-                        <div class="text-muted small">Jan. 2023 -- May 2026</div>
+                    <div style="text-align: right;">
+                        <div
+                            style="background-color: var(--color-accent-light); color: var(--color-primary); padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem;">
+                            GPA: 4.11</div>
+                        <div style="color: var(--color-text-light); font-size: 0.85rem;">Jan 2023 — May 2026</div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>

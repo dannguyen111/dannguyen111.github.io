@@ -1,0 +1,17 @@
+- title: "AI Engineer Intern"
+  company: "KPMG"
+  location: "Berlin, DE"
+  period: "June 2025 – Aug 2025"
+  highlights:
+    - "Pioneered a project to train a specialized LLM for Global Audit, building an ETL + GraphRAG pipeline with Python and Neo4j that improved QA processing efficiency by 30%."
+    - "Engineered prompt-based LLM solutions using LangChain and Jupyter Notebooks for NLP tasks like markdown extraction, enhancing document parsing reliability by 30%."
+    - "Developed QA dataset generators and an 'LLM-as-a-judge' evaluation framework in Python, enabling scalable data augmentation and model validation."
+
+- title: "Data Scientist Intern"
+  company: "KPMG"
+  location: "Berlin, DE"
+  period: "May 2024 – Aug 2024"
+  highlights:
+    - "Leveraged Python, Jupyter Notebooks, and MS Excel to conduct data analysis on public bank datasets, developing a deterministic rule-based baseline model for peer group clustering."
+    - "Engineered a stochastic unsupervised algorithm for the Clara 2.0 AI (anomaly detection), achieving a 15% improvement in peer group cohesion."
+    - "Designed and evaluated various peer group quality measures by comparing different methodologies to validate the most effective models for the risk assessment tool."

@@ -1,23 +1,59 @@
 ---
 layout: default
 ---
-<div class="container py-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
 
-            <a href="{{ '/' | relative_url }}#projects" class="btn btn-outline-secondary mb-4">&larr; Back to
-                Projects</a>
+<div class="project-detail">
+    <div class="container">
 
-            <h1 class="display-4 mb-3">{{ page.title }}</h1>
+        <a href="{{ '/' | relative_url }}#projects" class="btn-back">← Back to Projects</a>
 
+        <div class="project-header">
             {% if page.image %}
-            <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow mb-4" alt="{{ page.title }}">
+            <div class="project-image">
+                <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+            </div>
             {% endif %}
 
-            <div class="project-content">
-                {{ content }}
-            </div>
+            <div class="project-info">
+                <h1>{{ page.title }}</h1>
 
+                {% if page.tags or page.date or page.client or page.role %}
+                <div class="project-meta">
+                    {% if page.date %}
+                    <div class="meta-item">
+                        <span class="meta-label">Date</span>
+                        <span class="meta-value">{{ page.date | date: "%B %Y" }}</span>
+                    </div>
+                    {% endif %}
+
+                    {% if page.client %}
+                    <div class="meta-item">
+                        <span class="meta-label">Client</span>
+                        <span class="meta-value">{{ page.client }}</span>
+                    </div>
+                    {% endif %}
+
+                    {% if page.role %}
+                    <div class="meta-item">
+                        <span class="meta-label">Role</span>
+                        <span class="meta-value">{{ page.role }}</span>
+                    </div>
+                    {% endif %}
+
+                    {% if page.tags %}
+                    <div class="meta-item">
+                        <span class="meta-label">Tech Stack</span>
+                        <span class="meta-value">{{ page.tags | join: ", " }}</span>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
         </div>
+
+        <div class="project-content">
+            {{ content }}
+        </div>
+
     </div>
 </div>

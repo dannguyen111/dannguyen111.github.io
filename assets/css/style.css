@@ -28,9 +28,48 @@
     color: #1f1f1f;
 }
 
+.linkedin-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #0a66c2, #084d96);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0.55rem 1.2rem rgba(10, 102, 194, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.linkedin-pill:hover,
+.linkedin-pill:focus {
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 0.75rem 1.4rem rgba(10, 102, 194, 0.3);
+    filter: brightness(1.04);
+}
+
+.linkedin-pill-icon {
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+.linkedin-pill-text {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
 @media (max-width: 575.98px) {
     .brand-mark {
         font-size: 1.55rem;
         letter-spacing: 0.06em;
+    }
+
+    .linkedin-pill {
+        padding: 0.6rem 0.75rem;
+    }
+
+    .linkedin-pill-text {
+        display: none;
     }
 }

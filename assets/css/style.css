@@ -7,3 +7,30 @@
     transform: translateY(-5px);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
+
+.brand-mark {
+    font-family: "Bebas Neue", system-ui, sans-serif;
+    font-size: clamp(1.7rem, 2vw, 2.3rem);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    line-height: 1;
+    text-shadow:
+        0 1px 0 #f4f1ea,
+        0 2px 0 #dbd4c8,
+        0 3px 0 #c4baa9,
+        0 4px 0 #ada08d,
+        0 5px 8px rgba(0, 0, 0, 0.18);
+}
+
+.brand-mark:hover,
+.brand-mark:focus {
+    color: #1f1f1f;
+}
+
+@media (max-width: 575.98px) {
+    .brand-mark {
+        font-size: 1.55rem;
+        letter-spacing: 0.06em;
+    }
+}

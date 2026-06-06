@@ -3,6 +3,7 @@ title: Dan Nguyen
 description: "Personal Portfolio and Projects"
 url: "https://dannguyen111.github.io" 
 baseurl: ""
+linkedin_url: "https://www.linkedin.com/in/dannguyen111/"
 
 # Build Settings
 markdown: kramdown

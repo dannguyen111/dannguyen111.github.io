@@ -7,3 +7,69 @@
     transform: translateY(-5px);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
+
+.brand-mark {
+    font-family: "Bebas Neue", system-ui, sans-serif;
+    font-size: clamp(1.7rem, 2vw, 2.3rem);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    line-height: 1;
+    text-shadow:
+        0 1px 0 #f4f1ea,
+        0 2px 0 #dbd4c8,
+        0 3px 0 #c4baa9,
+        0 4px 0 #ada08d,
+        0 5px 8px rgba(0, 0, 0, 0.18);
+}
+
+.brand-mark:hover,
+.brand-mark:focus {
+    color: #1f1f1f;
+}
+
+.linkedin-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #0a66c2, #084d96);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0.55rem 1.2rem rgba(10, 102, 194, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.linkedin-pill:hover,
+.linkedin-pill:focus {
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 0.75rem 1.4rem rgba(10, 102, 194, 0.3);
+    filter: brightness(1.04);
+}
+
+.linkedin-pill-icon {
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+.linkedin-pill-text {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+@media (max-width: 575.98px) {
+    .brand-mark {
+        font-size: 1.55rem;
+        letter-spacing: 0.06em;
+    }
+
+    .linkedin-pill {
+        padding: 0.6rem 0.75rem;
+    }
+
+    .linkedin-pill-text {
+        display: none;
+    }
+}

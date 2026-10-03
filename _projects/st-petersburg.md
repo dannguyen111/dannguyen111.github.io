@@ -1,5 +1,6 @@
 ---
 layout: project
+redirect_to: /projects/st-petersburg
 title: "Saint Petersburg AI Agent"
 description: "A tournament-winning AI agent for the board game Saint Petersburg using Monte-Carlo Tree Search and Machine Learning."
 image: "/assets/images/saint-petersburg-game.jpg"

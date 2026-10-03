@@ -4,6 +4,8 @@ description: "Personal Portfolio and Projects"
 url: "https://dannguyen111.github.io" 
 baseurl: ""
 linkedin_url: "https://www.linkedin.com/in/dannguyen111/"
+# Every page redirects here (see _layouts/default.html).
+new_site_url: "https://si-dan.com"
 
 # Build Settings
 markdown: kramdown

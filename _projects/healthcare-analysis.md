@@ -1,5 +1,6 @@
 ---
 layout: project
+redirect_to: /projects/healthcare
 title: "Healthcare Access Disparities Analysis"
 description: "A quantitative research project analyzing healthcare inequity in Pennsylvania using mathematical modeling and regression analysis."
 image: "assets/images/healthcare-paper-thumbnail.png"

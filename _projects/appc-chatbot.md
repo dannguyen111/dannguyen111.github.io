@@ -1,5 +1,6 @@
 ---
 layout: project
+redirect_to: /projects/appc-chatbot
 title: "APPC Archive Assistant"
 description: "An AI-powered Retrieval-Augmented Generation (RAG) system designed to search and synthesize decades of university academic policy minutes."
 image: assets/images/appc-chatbot-preview.png

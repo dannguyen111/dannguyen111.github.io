@@ -1,5 +1,6 @@
 ---
 layout: project
+redirect_to: /projects/palamedes
 title: "Palamedes: Fraternity Management Platform"
 description: "A comprehensive web application built with Django to streamline chapter operations, point tracking, and financial dues for Greek life organizations."
 image: "/assets/images/palamedes-preview.png"

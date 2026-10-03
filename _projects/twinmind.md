@@ -1,5 +1,6 @@
 ---
 layout: project
+redirect_to: /projects/twinmind
 title: "TwinMind Copilot"
 description: "An AI-powered live meeting assistant that transcribes speech in real-time, generates contextual suggestions, and features an interactive deep-dive chat."
 image: assets/images/twinmind-preview.png

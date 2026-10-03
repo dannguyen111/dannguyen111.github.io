@@ -1,5 +1,6 @@
 ---
 layout: project
+redirect_to: /projects/mancala
 title: "Mancala AI Agent"
 description: "A competitive AI agent for the game of Mancala using Minimax search and Alpha-Beta pruning."
 image: "/assets/images/mancala-board.jpg"

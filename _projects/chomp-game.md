@@ -1,5 +1,6 @@
 ---
 layout: project
+redirect_to: /projects/chomp
 title: "Computational Analysis of 3xN Chomp"
 description: "A computational research project identifying infinite families of P-positions in the 3-row game of Chomp."
 image: "/assets/images/chomp-diagram.jpg"
